@@ -15,7 +15,7 @@ INSERT INTO games (name, type, players) VALUES
 ('Go', 'strategy', 2),
 ('Cribbage', 'card', 4),
 ('Catan', 'resource', 4),
-('Pandemic', 'cooperation' 4),
+('Pandemic', 'cooperation', 4),
 ('Risk', 'war-scenario', 8),
 ('Trivial Pursuit', 'knowledge', 8),
 ('Clue', 'myster', 6)
