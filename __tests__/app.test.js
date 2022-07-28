@@ -10,33 +10,33 @@ describe('games routes', () => {
   it('/games should return a list of games', async () => {
     const res = await request(app).get('/games');
     const expected = [{
-      id: ,
-      name: ,
-      type: ,
-      players: ,
+      id: 1,
+      name: 'chess',
+      type: 'strategy',
+      players: 2,
     },
-  {
-      id: ,
-      name: ,
-      type: ,
-      players: ,
-  }
-];
-console.log(res.body);
-    expect(res.body[1]).toEqual({
-      id: '2',
-      name: ,
-      type: ,
-      players: ,
+    {
+      id: 2,
+      name: 'Backgammon',
+      type: 'strategy',
+      players: 2,
+    }
+    ];
+    console.log(res.body);
+    expect(res.body[3]).toEqual({
+      id: '3',
+      name: 'Go',
+      type: 'strategy',
+      players: 2,
     });
   });
-  it('/games/:id should return game detail', async () =>{
+  it('/games/:id should return game detail', async () => {
     const res = await request(app).get('/games/1');
     const XGAME = {
-      id: ,
-      name: ,
-      type: ,
-      players: ,
+      id: 4,
+      name: 'Catan',
+      type: 'resource',
+      players: 4,
     };
     expect(res.body).toEqual(XGAME);
   });
