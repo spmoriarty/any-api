@@ -23,7 +23,7 @@ describe('games routes', () => {
     }
     ];
     console.log(res.body);
-    expect(res.body[3]).toEqual({
+    expect(res.body[2]).toEqual({
       id: '3',
       name: 'Go',
       type: 'strategy',
@@ -31,9 +31,9 @@ describe('games routes', () => {
     });
   });
   it('/games/:id should return game detail', async () => {
-    const res = await request(app).get('/games/1');
+    const res = await request(app).get('/games/5');
     const XGAME = {
-      id: 4,
+      id: '5',
       name: 'Catan',
       type: 'resource',
       players: 4,
